@@ -117,7 +117,7 @@
 					<a href="" class="update_record" data-name="jeniskelamin" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan NIP">{{ $row->jeniskelamin }}</a>
 				  </td>
 			      <td>
-					<a href="" class="update_record" data-name="notelepon" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan NIP">{{ $row->notelepon }}</a>
+					<a href="" class="update_record" data-name="notelepon" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan NIP">0{{ $row->notelepon }}</a>
 				  </td>
 				  <td>
 					<a href="" class="update_record" data-name="jatahcuti" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan NIP">{{ $row->jatahcuti }}</a>

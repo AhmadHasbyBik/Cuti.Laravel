@@ -7,6 +7,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SpdController;
 use App\Models\Employee;
 use App\Models\Cuti;
+use App\Models\Spd;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,9 +23,14 @@ use App\Models\Cuti;
 Route::get('/', function () {
 	$jumlahpegawai = Employee::count();
 	$jumlahcuti = Cuti::count();
+	$jumlahspd = Spd::count();
 	$jumlahpegawailk = Employee::where('jeniskelamin','Laki-laki')->count();
 	$jumlahpegawaipr = Employee::where('jeniskelamin','Perempuan')->count();
-    return view('welcome', compact('jumlahpegawai', 'jumlahpegawailk', 'jumlahpegawaipr', 'jumlahcuti'));
+	$jumlahcutidisetujui = Cuti::where('approved','1')->count();
+	$jumlahcutitidakdisetujui = Cuti::where('approved',' ','0')->count();
+	
+    return view('welcome', compact('jumlahpegawai', 'jumlahpegawailk', 'jumlahpegawaipr', 
+	'jumlahcuti', 'jumlahspd', 'jumlahcutidisetujui', 'jumlahcutitidakdisetujui'));
 });
 
 Route::get('/pegawai',[EmployeeController::class, 'index'])->name('pegawai')->middleware('auth');

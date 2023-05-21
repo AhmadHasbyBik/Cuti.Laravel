@@ -102,7 +102,7 @@
 					<a href="" class="update_record" data-name="jabatan" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan Jabatan">{{ $row->jabatan }}</a>
 				  </td>
 				  <td>
-					<a href="" class="update_record" data-name="masakerja" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan Masa Kerja">{{ $row->masakerja }}</a>
+					<a href="" class="update_record" data-name="masakerja" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan Masa Kerja">{{ $row->masakerja }} hari</a>
 				  </td>
 				  <td>
 					<a href="" class="update_record" data-name="alasancuti" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan Alasan Cuti">{{ $row->alasancuti }}</a>
@@ -134,7 +134,6 @@
 				 </td>
 				 <td>
 					@if($row->approved == '1')
-						
 					@else
 						<form action="{{ route('approved', $row->id) }}" method="POST">
 							@csrf

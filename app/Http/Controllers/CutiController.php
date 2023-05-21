@@ -40,12 +40,6 @@ class CutiController extends Controller
     	return view('cuti/tambahdatacuti', compact('datae'));
     }
 
-    public function tambahnip(Request $request)
-    {
-        $data = Employee::where('nama', $request->input('nama'))->first();
-        return response()->json($data);
-    }
-
     public function insertdatacuti(Request $request)
     {
         $folderPath = public_path('upload/');

@@ -27,10 +27,10 @@
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
-              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-users"></i></span>
+              <span class="info-box-icon bg-light elevation-1"><i class="fas fa-users"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Jumlah Pegawai</span>
+                <span class="info-box-text">Total <br>Pegawai</span>
                 <span class="info-box-number">
                   {{ $jumlahpegawai }}
                   <small>Orang</small>
@@ -43,10 +43,10 @@
           <!-- /.col -->
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-users"></i></span>
+              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-user"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Jumlah Pegawai <br>Laki-laki</span>
+                <span class="info-box-text">Pegawai <br>Laki-laki</span>
                 <span class="info-box-number">
                     {{ $jumlahpegawailk }}
                   <small>Orang</small>
@@ -63,10 +63,10 @@
 
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-users"></i></span>
+              <span class="info-box-icon bg-pink elevation-1"><i class="fas fa-user-alt"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Jumlah Pegawai<br> Perempuan</span>
+                <span class="info-box-text">Pegawai <br>Perempuan</span>
                 <span class="info-box-number">
                     {{ $jumlahpegawaipr }}
                   <small>Orang</small>
@@ -77,14 +77,18 @@
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+              <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-cut"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Jumlah Pegawai<br> Cuti</span>
+                <span class="info-box-text">Total <br>Pengajuan Cuti</span>
                 <span class="info-box-number">
-                  {{ $jumlahcuti }}
+                    {{ $jumlahcuti }}
                   <small>Orang</small>
                 </span>
               </div>
@@ -93,13 +97,71 @@
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-check"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Pengajuan Cuti<br>yang Sudah <br>Disetujui</span>
+                <span class="info-box-number">
+                    {{ $jumlahcutidisetujui }}
+                  <small>Orang</small>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-times"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Pengajuan Cuti<br>yang Belum <br>Disetujui</span>
+                <span class="info-box-number">
+                    {{ $jumlahcutitidakdisetujui }}
+                  <small>Orang</small>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-dark elevation-1"><i class="fas fa-align-left"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Total <br>Pengajuan Surat<br> Dinas</span>
+                <span class="info-box-number">
+                    {{ $jumlahpegawaipr }}
+                  <small>Orang</small>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
         </div>
-        <!-- /.row -->
-
-        
-        <!-- /.row -->
-
-        <!-- Main row -->
         <!-- /.row -->
       </div><!--/. container-fluid -->
     </section>
