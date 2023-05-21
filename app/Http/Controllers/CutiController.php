@@ -135,17 +135,18 @@ class CutiController extends Controller
      {
          $data = Cuti::findOrFail($id);
          $data->approved = true;
+         $data->save();
 
          $this->updatejatahcuti($data->id_employee, $data->masakerja);
-         $data->save();
-         
-         return redirect()->back()->with('success', 'Item approved successfully');
+         return redirect()->route('cuti')->with('success', 'Item approved successfully');
      }
 
      public function updatejatahcuti($id_employee, $masakerja)
      {
-        $data = Employee::find($id_employee);
-        $data->jatahcuti = $data->jatahcuti - $masakerja;
+         $data = Employee::find($id_employee);
+         $data->jatahcuti = $data->jatahcuti - $masakerja;
+        
+         $data->save();
         //echo var_dump($data->jatahcuti);
      }
 
