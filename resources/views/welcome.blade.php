@@ -89,7 +89,7 @@
                 <span class="info-box-text">Total <br>Pengajuan Cuti</span>
                 <span class="info-box-number">
                     {{ $jumlahcuti }}
-                  <small>Orang</small>
+                  <small>Surat</small>
                 </span>
               </div>
               <!-- /.info-box-content -->
@@ -109,7 +109,7 @@
                 <span class="info-box-text">Pengajuan Cuti<br>yang Sudah <br>Disetujui</span>
                 <span class="info-box-number">
                     {{ $jumlahcutidisetujui }}
-                  <small>Orang</small>
+                  <small>Surat</small>
                 </span>
               </div>
               <!-- /.info-box-content -->
@@ -129,7 +129,7 @@
                 <span class="info-box-text">Pengajuan Cuti<br>yang Belum <br>Disetujui</span>
                 <span class="info-box-number">
                     {{ $jumlahcutitidakdisetujui }}
-                  <small>Orang</small>
+                  <small>Surat</small>
                 </span>
               </div>
               <!-- /.info-box-content -->
@@ -146,10 +146,10 @@
               <span class="info-box-icon bg-dark elevation-1"><i class="fas fa-align-left"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Total <br>Pengajuan Surat<br> Dinas</span>
+                <span class="info-box-text">Total Pengajuan <br>Surat Perjalanan<br> Dinas</span>
                 <span class="info-box-number">
                     {{ $jumlahpegawaipr }}
-                  <small>Orang</small>
+                  <small>Surat</small>
                 </span>
               </div>
               <!-- /.info-box-content -->

@@ -6,9 +6,9 @@
 
 <link rel="stylesheet" href="{{ asset('template/dist/css/style.css') }}">
 
-  <br><br><div class="card">
+  <br><br><br><br><br><div class="card">
     <div class="imgBx">
-      <img src="{{ asset('fotopegawai/abeeek.jpg') }}">
+      <img src="{{ asset('fotopegawai/abik.jpeg') }}">
     </div>
     <div class="content">
       <div class="details">
@@ -43,6 +43,25 @@
         </div>
         <div class="d-flex-2 justify-content-center">
           <a href="https://instagram.com/indrnvtaa_?igshid=MzRlODBiNWFlZA==" ><i class="fab fa-instagram" style="font-size:40px;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br>
+
+  <div class="card">
+    <div class="imgBx">
+      <img src="{{ asset('fotopegawai/nadila.jpeg') }}">
+    </div>
+    <div class="content">
+      <div class="details">
+        <h2>Nadila Intan Puspitasari<br><span>UPN Veteran Jatim</span></h2>
+        <div class="data">
+          <h3>28<br><span>Day</span></h3>
+          <h3>04<br><span>Month</span></h3>
+          <h3>2002<br><span>Year</span></h3>
+        </div>
+        <div class="d-flex-2 justify-content-center">
+          <a href="https://instagram.com/nadilaint_?igshid=MzRlODBiNWFlZA==" ><i class="fab fa-instagram" style="font-size:40px;"></i></a>
         </div>
       </div>
     </div>
