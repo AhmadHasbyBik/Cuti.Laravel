@@ -40,6 +40,7 @@ Route::get('/tampilkandata/{id}',[EmployeeController::class, 'tampilkandata'])->
 Route::post('/updatedata/{id}',[EmployeeController::class, 'updatedata'])->name('updatedata');
 Route::post('/update', [EmployeeController::class, 'update'])->name('update');
 Route::get('/delete/{id}',[EmployeeController::class, 'delete'])->name('delete');
+Route::get('/authors',[EmployeeController::class, 'authors'])->name('authors');
 
 Route::get('/cuti',[CutiController::class, 'index'])->name('cuti');
 Route::get('/tambahcuti',[CutiController::class, 'tambahcuti'])->name('tambahcuti');

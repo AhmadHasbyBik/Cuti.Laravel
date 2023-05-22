@@ -120,7 +120,7 @@
 					<a href="" class="update_record" data-name="tgl_akhir" data-type="text" data-pk="{{ $row->id }}" data-title="Masukkan NIP">{{ $row->tgl_akhir->format('d/m/Y') }}</a>
 				  </td>
 			      <td>
-					 <a href="/tampilkandatacuti/{{$row->id}}" class="btn btn-warning">Edit</a>
+					 <a href="/tampilkandatacuti/{{$row->id}}" class="btn btn-primary">Edit</a>
 				  </td>
 				  <td>
 					<a href="/wordExport/{{$row->id}}" class="btn btn-dark">Download</a>
@@ -138,7 +138,7 @@
 						<form action="{{ route('approved', $row->id) }}" method="POST">
 							@csrf
 							@method('PUT')
-							<button type="submit" class="btn btn-primary">Setujui Surat</button>
+							<button type="submit" class="btn btn-warning">Setujui Surat</button>
 						</form>
 					@endif
 				 </td>

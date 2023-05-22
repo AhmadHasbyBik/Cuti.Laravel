@@ -93,4 +93,9 @@ class EmployeeController extends Controller
         Excel::import(new EmployeeImport, \public_path('/EmployeeData/'.$namafile));
         return \redirect()->back();
     }
+
+    public function authors()
+    {
+    	return view('authors');
+    }
 }
