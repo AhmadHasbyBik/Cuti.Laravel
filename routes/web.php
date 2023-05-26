@@ -5,6 +5,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\CutiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SpdController;
+use App\Http\Controllers\HomeController;
 use App\Models\Employee;
 use App\Models\Cuti;
 use App\Models\Spd;
@@ -19,8 +20,8 @@ use App\Models\Spd;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
+Route::get('/',[HomeController::class, 'index'])->name('home');
+Route::get('/homepegawai', function () {
 	$jumlahpegawai = Employee::count();
 	$jumlahcuti = Cuti::count();
 	$jumlahspd = Spd::count();
