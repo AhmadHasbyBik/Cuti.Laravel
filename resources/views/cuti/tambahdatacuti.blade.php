@@ -1,11 +1,13 @@
 @extends('layout.admin')
 @section('content')
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <script type="text/javascript" src="http://keith-wood.name/js/jquery.signature.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://keith-wood.name/css/jquery.signature.css">
+	
+	<link rel="stylesheet" href="{{ asset('template/dist/jquery.signature.package/css/jquery.signature.css') }}">
+	<script src="{{ asset('template/dist/jquery.signature.package/js/jquery.signature.js') }}"></script>
+    {{-- <script type="text/javascript" src="https://keith-wood.name/js/jquery.signature.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://keith-wood.name/css/jquery.signature.css"> --}}
     <style>
         .kbw-signature {
             width: 100%;
@@ -54,8 +56,10 @@
 						    <input type="number" name="notelepon" class="form-control" id="notelepon" aria-describedby="emailHelp" readonly>
 						  </div>
 						  <div class="mb-3">
-						    <label for="exampleInputEmail1" class="form-label">Masa Kerja</label>
-						    <input type="text" name="masakerja" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						    <label  class="form-label">Masa Kerja</label>
+							<div class="form-inline">
+						    	<input type="text" name="masakerja" class="form-control ">&nbsp;&nbsp;hari
+							</div>
 						  </div>
 						  <div class="mb-3">
 						    <label for="exampleInputEmail1" class="form-label">Alasan Cuti</label>
@@ -91,11 +95,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
-	<script type="text/javascript">
-        $(function() {
-            $('#datetimepicker1').datetimepicker();
-        });
-    </script>
 	<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
     <script type="text/javascript">
        var signaturePad = $('#signaturePad').signature({syncField: '#signature64', syncFormat: 'PNG'});

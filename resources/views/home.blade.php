@@ -8,9 +8,6 @@
     <title>
         DISPAREKRAFBUDPORA
     </title>
-    <meta name="description" content="Simple landind page" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
@@ -68,9 +65,6 @@
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <br>
-          <h1 class="my-4 text-5xl font-bold leading-tight">
-            DISPAREKRAFBUDPORA
-          </h1>
           <p class="leading-normal text-2xl mb-8">
             Dinas Pariwisata dan Ekonomi Kreatif, Kebudayaan, Kepemudaan dan. Olah Raga Kabupaten Gresik
           </p>
@@ -80,7 +74,7 @@
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 text-center">
-          <img class="rounded float-right " src="{{ asset('template/dist/img/logo/logoGresik.png') }}" />
+          <img class="w-full md:w-3/5 rounded float-right " src="{{ asset('template/dist/img/logo/logoGresik.png') }}" />
         </div>
       </div><br><br>
     </div>
@@ -112,14 +106,12 @@
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
+          <div class="w-full sm:w-1/2 p-6">
             <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
               Data Pegawai
             </h3>
             <p class="text-gray-600 mb-8">
                 <br>Membuat form pendaftaran untuk mengumpulkan informasi pribadi dan pekerjaan pegawai baru.
-                Membuat form pengajuan pegawai cuti.
-                Membuat form pengajuan surat perjalanan dinas.
               <div class="flex items-center justify-start">
                 <a href="/homepegawai" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                   Lihat!
@@ -408,18 +400,17 @@
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
               <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Lorem ipsum dolor sit amet
+                Surat Cuti dan Perjalanan Dinas
               </h3>
               <p class="text-gray-600 mb-8">
-                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt dui a ipsum egestas, at accumsan sem tincidunt. 
-                Aenean id eleifend mi. Quisque malesuada vel erat eget ultricies. Pellentesque accumsan auctor sem non posuere. Nulla et scelerisque urna. 
-
-              <div class="flex items-center justify-start">
-                <a href="/homepegawai" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Lihat!
-                </a>
-              </div>
-            </p>
+                <br>Membuat surat pengajuan pegawai cuti dan
+                Membuat surat pengajuan surat perjalanan dinas.
+                <div class="flex items-center justify-start">
+                  <a href="/cuti" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Lihat!
+                  </a>
+                </div>
+              </p>
             </div>
           </div>
         </div>
@@ -439,9 +430,9 @@
               <div class="mt-2 mb-3 w-full font-bold text-xl text-gray-800 px-6">
                 Wisata Alam
               </div>
-              {{-- <img class="rounded mx-auto d-block" width="300px" src="{{ asset('template/dist/img/logo/alam.jpg') }}" /> --}}
+              <img class="mx-auto" width="148px" src="{{ asset('template/dist/img/logo/pantai.png') }}" /><br>
               <p class="mt-4 text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                Aktivitas wisata beragam, kunjungi tempat wisata alam, sejarah, religius, budaya, rekreasi, atau berpartisipasi dalam aktivitas-aktivitas tertentu seperti hiking, menyelam, bersepeda, atau berlayar.
               </p>
             </a>
           </div>
@@ -459,9 +450,10 @@
                 <div class="mt-2 mb-3 w-full font-bold text-xl text-gray-800 px-6">
                   Wisata Religi
                 </div>
-                {{-- <img class="rounded mx-auto d-block" width="300px" src="{{ asset('template/dist/img/logo/masjid.jpg') }}" /> --}}
+                <img class="mx-auto" width="153px" src="{{ asset('template/dist/img/logo/religi.png') }}" /><br>
                 <p class="mt-4 text-gray-800 text-base px-6 mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  Carilah pengalaman spiritual, meningkatkan pemahaman tentang agama, memperdalam keimanan, atau mencari kedamaian dalam konteks keagamaan, anda dapat berpartisipasi dalam ritual keagamaan, berdoa, meditasi, atau berpartisipasi 
+                  dalam kegiatan keagamaan yang diadakan di tempat-tempat wisata religi Gresik.  
                 </p>
               </a>
           </div>
@@ -479,10 +471,11 @@
                 <div class="mt-2 mb-3 w-full font-bold text-xl text-gray-800 px-6">
                     Wisata Kebudayaan
                   </div>
-                  {{-- <img class="rounded mx-auto d-block" width="350px" src="{{ asset('template/dist/img/logo/budaya.jpeg') }}" /> --}}
-                  <p class="mt-4 text-gray-800 text-base px-6 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                  </p>
+                  <img class="mx-auto" width="175px" src="{{ asset('template/dist/img/logo/budaya.png') }}" /><br>
+                <p class="mt-4 text-gray-800 text-base px-6 mb-5">
+                  kunjungi tempat-tempat seperti museum, galeri seni, situs bersejarah, monumen, pura, desa adat, festival budaya, 
+                  pertunjukan seni tradisional, atau workshop yang menawarkan pengalaman langsung dalam mengenal budaya daerah Gresik.   
+                </p>
             </a>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
@@ -525,9 +518,7 @@
       <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
-      <h3 class="my-4 text-3xl leading-tight">
-        Ikuti Kami!
-      </h3><br>
+      <img class="mx-auto" width="150px" src="{{ asset('template/dist/img/logo/ig.png') }}" /><br>
       <a href="https://www.instagram.com/bidporakabgresik/" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
         Kunjungi!
       </a>
